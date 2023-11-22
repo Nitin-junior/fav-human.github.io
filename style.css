@@ -1,0 +1,70 @@
+BODY { 
+    background: #AAAAAA;
+    }
+    
+    .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+      display: table-cell;
+      width: 120px;
+      height: 166px;
+      border: 1px solid white;
+      
+      cursor: pointer;
+    }
+    
+    .tile1 {
+        background-image: url(image/1.jpg);
+        background-position: left top;
+    }
+    .tile2 {
+        background-image: url(image/2.jpg);
+        background-position: center top;}
+    .tile3 {
+        background-image: url(image/3.jpg);
+        background-position: right top;}
+    .tile4 {
+        background-image: url(image/4.jpg);
+        background-position: left center;}
+    .tile5 {
+        background-image: url(image/5.jpg);
+        background-position: center center;}
+    .tile6 {
+        background-image: url(image/6.jpg);
+        background-position: right center;}
+    .tile7 {
+        background-image: url(image/7.jpg);
+        background-position: left bottom;}
+    .tile8 {
+        background-image: url(image/8.jpg);
+        background-position: center bottom;}
+    .tile9 {
+        
+        background: white; cursor: default;}
+        .animate-me {
+            -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */ 
+            animation: 4s infinite bgcolorchange;
+          }
+          @keyframes bgcolorchange {
+            0% {
+              background-color: red;
+            }
+            25% {
+              background-color: green;
+            }
+            50% {
+              background-color: yellow;
+            }
+            75% {
+              background-color: yellow;
+            }
+            100% {
+              background-color: rgb(104, 39, 139)(166, 0, 255);
+            }
+          }
+          /* Chrome, Safari, Opera */
+           @-webkit-keyframes bgcolorchange {
+                0%   {background: red;}
+                25%  {background: yellow;}
+                75%  {background: green;}
+                100% {background: blue;}
+           }
+           
